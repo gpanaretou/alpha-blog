@@ -1,21 +1,10 @@
-<div class="container content-justify-center col-6 rounded mb-5 mt-5">
-    <% if @article.errors.any? %>
-        <h3 class="text-danger">The following errors prevented the article from being saved:</h3>
-        <ul>
-            <% @article.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-        </ul>
-    <% end %>
-</div>
-
-
-<div class="container col-6 bg-secondary font-white shadow p-3 mb-4 rounded">
+<%= render 'shared/errors' %>
+<div class="container col-6 bg-secondary font-white shadow p-3 mb-4 rounded"> 
     <div class="row justify-content-center">
         <%= form_with(model: @article, local:true) do |f| %>
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 justify-content-center">
                 <%= f.label :title, class:"col-2 col-form-label text-light" %>
-                <div class="align-center">
+                <div class="text-center">
                     <%= f.text_field :title, class:"form-control", placeholder:"Article's title" %>
                 </div>
                 
