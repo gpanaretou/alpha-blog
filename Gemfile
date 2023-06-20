@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.0"
 
+gem "sassc-rails"
+gem "bootstrap", "~> 5.2.0"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5"
 
@@ -75,6 +78,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '~> 1.1.0'
+  gem 'pg'
   gem 'rails_12factor'
 end
