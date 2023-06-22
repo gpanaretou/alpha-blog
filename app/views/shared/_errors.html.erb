@@ -1,15 +1,13 @@
-<div class="container col-6 rounded mb-5 mt-5">
-    <div class="row justify-contnet-center">
-        <% if @article.errors.any? %>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                <h3 class="text-center">The following errors prevented the article from being saved:</h3>
-                <ol>
-                    <% @article.errors.full_messages.each do |msg| %>
-                        <li><%= msg %></li>
-                    <% end %>
-                </ol>
-            </div>
-        <% end %>
+<% if obj.errors.any? %>
+<div class="container">
+    <div class="alert alert-danger alert-dismissible fade show shadow p-3 mb-4 rounded" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <h3 class="text-center">The following errors prevented the article from being saved:</h3>
+        <ol>
+            <% obj.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+        </ol>
     </div>
 </div>
+<% end %>
