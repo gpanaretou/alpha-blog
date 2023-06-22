@@ -31,7 +31,10 @@ class UsersController < ApplicationController
         else
             render 'edit', status: :unprocessable_entity
         end
+    end
 
+    def index      
+        @user = User.all
     end
 
 

@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
 
             <%= link_to "ALPHA BLOG", root_path, class: "navbar-brand", id:"logo" %>
@@ -9,10 +9,10 @@
                 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <%= link_to "Bloggers", users_path, class:"nav-link" %>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle font-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Articles
                 </a>
                 <ul class="dropdown-menu">
@@ -28,7 +28,7 @@
             </ul>
 
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Search for an article" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             </div>
