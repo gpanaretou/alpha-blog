@@ -8,7 +8,7 @@
                 <div class="form-group mb-4">
                     <%= f.label :username, class:"col-2 col-form-label text-light" %>
                     <div class="text-center">
-                        <%= f.text_field :title, class:"form-control", placeholder:"Enter you username" %>
+                        <%= f.text_field :username, class:"form-control", placeholder:"Enter you username" %>
                     </div>
                 </div>
 
@@ -22,11 +22,12 @@
                 </div>
 
                 <div class="form-group mb-4">    
-                    <%= f.submit class:"btn btn-success" %>
+                    <%= f.submit "Sign up!", class:"btn btn-success" %>
                 </div> 
             <% end %>
         </div>
+        <%= link_to '[Cancel and return back to all articles]', articles_path, class:"text-info text-center text-black"%>
+
     </div>
 
-    <%= link_to '[Cancel and return back to all articles]', articles_path, class:"text-info"%>
 </div>
