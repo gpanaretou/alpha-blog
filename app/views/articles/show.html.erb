@@ -3,7 +3,7 @@
 <div class="container col-6 mt-4">
     <div class="card shadow mb-4 bg-white rounded text-center">
         <div class="card-header fst-italic">
-            Featured
+            by <%= @article.user.username if @article.user %>
         </div>
         <div class="card-body">
             <div class="card-text text-start"><%= simple_format(@article.description) %></div>
