@@ -1,3 +1,17 @@
 <h1 class="text-center mt-4 mb-4">All users</h1>
 
+<div class="flickr_pagination">
+    <div class="page_info">
+      <%= page_entries_info @user %>
+    </div>
+    <%= will_paginate @user, :container => false %>
+</div>
+
 <%= render 'user' %>
+
+<div class="flickr_pagination mb-4">
+    <div class="page_info">
+      <%= page_entries_info @user %>
+    </div>
+    <%= will_paginate @user, :container => false %>
+</div>
