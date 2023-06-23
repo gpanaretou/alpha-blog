@@ -16,7 +16,8 @@ html {
 
 body {
     display: flex;
-    padding-bottom:55px;   /* Height of the footer */
+    height: 100%;
+    padding-bottom: 55px;   /* Height of the footer */
 }
 
 #logo {
@@ -31,12 +32,9 @@ body {
 #home-container {
     margin-top: 25px;
     align-content: center;
-
-
 }
 
 .jumbotron {
-
     background-image: asset-url('jumbo-copy.jpg');
     background-position: center center;
     background-repeat: no-repeat;
