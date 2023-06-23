@@ -4,6 +4,7 @@
         <div class="col-8 mt-4">
             <div class="card shadow mb-4 bg-white rounded text-center">
                 <div class="card-header fst-italic">
+                    <%= gravatar_for article.user %>
                     by <%= link_to (article.user.username if article.user), article.user %>
                 </div>
 
