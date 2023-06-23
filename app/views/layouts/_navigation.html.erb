@@ -35,13 +35,12 @@
                         <%= link_to "Logout", logout_path, class: "nav-link", data: {turbo_method: :delete} %>
                     </li>
                 <% else %>
-                <li class="nav-item">
-                    <%= link_to "Log In", login_path, class: "nav-link" %>
-                </li>
-                <li class="nav-item">
-                    <%= link_to "Sign up", signup_path, class: "nav-link" %>
-                </li>
-
+                    <li class="nav-item">
+                        <%= link_to "Log In", login_path, class: "nav-link" %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to "Sign up", signup_path, class: "nav-link" %>
+                    </li>
                 <% end %>
             </ul>
 
