@@ -14,7 +14,6 @@ class SessionsController < ApplicationController
             flash.now[:alert] = "There was something wrong with your credentials"
             render 'new', status: :unprocessable_entity
         end
-
     end
 
     def destroy
