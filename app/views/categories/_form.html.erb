@@ -1,0 +1,19 @@
+<div class="container"> 
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <%= render 'shared/errors', obj: @category %>
+            <%= form_with(model: @category, local:true, class:"bg-secondary font-white shadow p-3 mb-4 rounded") do |f| %>
+                <div class="form-group mb-4">
+                    <%= f.label :name, class:"col-2 col-form-label text-light" %>
+                    <div class="text-center">
+                        <%= f.text_field :name, class:"form-control", placeholder:"Enter category name" %>
+                    </div>
+                </div>
+                <div class="form-group mb-4">    
+                    <%= f.submit class:"btn btn-success" %>
+                </div> 
+            <% end %>
+        </div>
+        <%= link_to '[Cancel and return back to all articles]', articles_path, class:"text-info text-center text-black"%>
+    </div>
+</div>
