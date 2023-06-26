@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# RAILS BLOG 
 
-Things you may want to cover:
+Rails Blog is a ...
 
-* Ruby version
+## Technical specs
 
-* System dependencies
+    -- To initialize the databases run:
+        -- rails db:migrate
+        
+A ruby on rails project that contains most of the necessary components for creating a web application on the MVC model.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In addition, there is database integration with sqlite using rails's magic, and different association types such as one-to-many.
