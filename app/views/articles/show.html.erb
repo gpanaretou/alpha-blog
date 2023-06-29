@@ -7,6 +7,10 @@
                 <div class="card-header fst-italic">
                     <%= link_to gravatar_for(@article.user), @article.user, class: "mb-4 shadow" %>
                     by <%= link_to (@article.user.username if @article.user), @article.user %>
+                    <% if @article.categories.any? %>
+                        </br>
+                        <div class="mt-2"><%= render @article.categories %></div> 
+                    <% end %>
                     
                 </div>
                 
