@@ -33,7 +33,7 @@
                             <li><%= link_to "View Categories" , categories_path, class:"dropdown-item"%></li>
                             <% if logged_in? %>
                                 <% if current_user.admin? %>
-                                <li><%= link_to "Create a new category" , new_category_path, class:"dropdown-item"%></li>
+                                    <li><%= link_to "Create a new category" , new_category_path, class:"dropdown-item"%></li>
                                 <% end %>
                             <% end %>                         
                         </ul>
