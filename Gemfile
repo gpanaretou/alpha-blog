@@ -83,3 +83,5 @@ group :production do
   gem "sqlite3", "~> 1.4"
   gem 'rails_12factor'
 end
+
+gem "dockerfile-rails", ">= 1.5", :group => :development
