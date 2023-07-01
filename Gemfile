@@ -80,6 +80,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+  gem "sqlite3", "~> 1.4"
   gem 'rails_12factor'
 end
